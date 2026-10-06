@@ -6,10 +6,10 @@ const a = 5;
 const b = inc(a);
 console.dir({ a, b });
 
-const incByRef = (num) => {
-    num.n = num.n + 1
+const incII = (num) => {
+    num.n++;
 };
 
 const obj = { n: 5 };
-incByRef(obj);
+incII(obj);
 console.dir({obj});
