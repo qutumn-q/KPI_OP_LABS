@@ -5,7 +5,7 @@ function array() {
 
     function access(i) { return arr[i]; };
     access.push = function(value) { arr.push(value); };
-    access.pop = function() { arr.pop(); };
+    access.pop = function() { return arr.pop(); };
 
     return access;
 };
