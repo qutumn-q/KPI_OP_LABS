@@ -10,3 +10,16 @@ const pipe = (...fns) => {
 };
 
 module.exports = { pipe };
+
+const inc = (x) => ++x;
+const twice = (x) => x * 2;
+const cube = (x) => x ** 3;
+
+console.log(pipe(inc, twice, cube)(5));
+console.log(pipe(inc, inc)(7));
+
+try {
+  pipe(inc, 7, cube);
+} catch (e) {
+  console.log(e.message);
+}
