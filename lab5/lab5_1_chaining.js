@@ -5,7 +5,6 @@ function seq(...args) {
         if (typeof arg === "number") {
             return args.reduceRight((result, fn) => fn(result), arg);
         }
-
         return seq(...args, arg);
     };
 }
