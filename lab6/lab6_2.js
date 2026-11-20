@@ -33,8 +33,6 @@ const compose = (...fns) => {
     return f;
 };
 
-module.exports = { compose };
-
 const inc = (x) => x + 1;
 const twice = (x) => x * 2;
 const fail = () => {

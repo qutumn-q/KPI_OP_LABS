@@ -12,4 +12,4 @@ const unique = (array) => {
 };
 
 const result = unique([2, 1, 1, 3, 2, 4, 5, 3]);
-console.log(result); // [2, 1, 3, 4, 5]
+console.log(result); 

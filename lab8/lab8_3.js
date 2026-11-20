@@ -25,4 +25,4 @@ const contract = (fn, ...types) => {
 const add = (a, b) => a + b;
 const addNumbers = contract(add, Number, Number, Number);
 const res = addNumbers(2, 3);
-console.dir(res); // 5
+console.dir(res); 
